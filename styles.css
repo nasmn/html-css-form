@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #4682b4;
+}
+.header{
+    background-color: #010101;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+}
+
+button,p{
+    color: white;
+}
+
+.header-text {
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.header-sub-text{
+    font-size: 10px;
+    color: #ccc;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 6px;
+    display: inline-block;
+}
+
+
+.header-sub-text:hover{
+    color: white;
+}
+
+.logo-section button{
+    background-color: #00ae1c;
+    color: black;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.gray-btn{
+    background-color: #313131;
+    cursor: pointer;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.gray-btn:hover{
+    background-color: #5A5F73;
+}
+
+.signup-btn{
+    background-color: #00ae1c;
+    cursor: pointer;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: black;
+    transition: all 0.3s;
+}
+
+.signup-btn:hover{
+    background-color: #248C46;
+    color: white;
+}
+
+.form{
+    background-color: rgba(0,0,0,0.4);
+    width: 20%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 40px 20px;
+    border-radius: 4px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.form input{
+    background: none;
+    margin-bottom: 16px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
+    transition: transform;
+}
+
+.form button{
+    margin-bottom: 40px;
+    background-color: #add8e6;
+    border: none;
+    padding: 15px;
+}
+
+.form a{
+    text-decoration: none;
+    color: #add8e6;
+    margin-left: 4px;
+}
+
+::placeholder{
+    color: white;
+    font-weight: bold;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 300px;
+    height: 10px;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px 8px 0 0 ;
+}
+
+.form input:focus ::placeholder{
+    transform: translateY();
+    transition: all 0.1s;
+}
+
+@media only screen and (max-width:768px){
+    .logo-section button {
+        display: none;
+    }
+}
+
+
+
